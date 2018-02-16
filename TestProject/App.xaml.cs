@@ -8,7 +8,7 @@ namespace TestProject
         {
             InitializeComponent();
 
-            MainPage = new TestProjectPage();
+            MainPage = new NavigationPage(new TestProjectPage()){BarTextColor = Color.Fuschia};
         }
 
         protected override void OnStart()
